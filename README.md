@@ -1,23 +1,21 @@
 # MicroGrantDAO
 
-Minimal On-chain DAO for Micro-Grants on **Base Network**.  
-Owner dapat membuat proposal hibah, anggota bisa voting, dan dana dieksekusi jika proposal didukung mayoritas.
+A minimal on-chain DAO for **micro-grants** on the Base Network.  
+The owner can create grant proposals, members can vote, and funds are executed if the proposal has majority support.
 
 ## ✨ Features
-- Buat proposal hibah (grant) oleh owner
-- Voting (for / against) oleh anggota
-- Eksekusi proposal (transfer ETH) jika disetujui
-- Semua aktivitas tercatat on-chain melalui event
+- Owner creates grant proposals
+- Members can vote **for** or **against**
+- Proposal execution if approved (ETH transfer to recipient)
+- Transparent on-chain events
 
 ## 📜 Smart Contract
 - Solidity version: `0.8.30`
 - License: MIT
-- Deployed at: [0x...](https://basescan.org/address/0x...)  
-  _(ganti dengan alamat deploy kamu di BaseScan)_
+- Deployed at: [0xYourContractHere](https://basescan.org/address/0xYourContractHere)
 
-## 🚀 Usage
-1. Kirim ETH ke kontrak (`receive()`)
-2. Owner buat proposal:
+## 🚀 How It Works
+1. Deposit ETH into the DAO contract
+2. Owner creates a proposal:
    ```solidity
    createProposal("Grant 1 ETH to Alice", 0xRecipientAddress, 1 ether);
-
