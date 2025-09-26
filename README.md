@@ -10,7 +10,7 @@ The owner can create grant proposals, members can vote, and funds are executed i
 - Transparent on-chain events
 
 ## 📜 Smart Contract
-- Solidity version: `0.8.30`
+- Solidity version: `0.8.30+`
 - License: MIT
 - Deployed at: [0xYourContractHere](https://basescan.org/address/0xYourContractHere)
 
